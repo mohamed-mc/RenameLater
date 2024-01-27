@@ -14,5 +14,5 @@ This provides a page with dark-light switch button and the page button the glow 
 
 Remember creating a effect for button, a spark to the state, text, loaders, a unique404 page the ' the force with you Glitch effect will require additional styles scripts not here.
 
- you know UserWay AI-P Accessibility Widget make these on your automatically? it from here now:UserWay/get](://user.org/get
+
 
