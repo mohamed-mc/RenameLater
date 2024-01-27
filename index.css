@@ -1,1 +1,10 @@
+/* General styles for all pages */
+body {
+    background-color: blue;
+    font-family: sans-serif;
+    color: white;
+}
+
+/* Styles for buttons, loaders, text effects, etc. */
+/* ... */
 
