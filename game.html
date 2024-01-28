@@ -2,16 +2,21 @@
 <html lang="en"> 
 <head> 
     <meta charset="UTF-8" />
-    <title>Making your first Phaser 3 Game - Part 10</title>
+    <title>Cyber-Runner </title>
     <script src="//cdn.jsdelivr.net/npm/phaser@3.11.0/dist/phaser.js"></script>
     <style type="text/css">
         body {
             margin: 0;
         }
     </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
+<div>
+    <h1>
+        Robotic Percival's Adventures!
+    </h1>
+</div>
 <script type="text/javascript">
 
 
@@ -23,7 +28,7 @@ var config = {
         default: 'arcade',
         arcade: {
             gravity: { y: 300 },
-            debug: true
+            debug: false
         }
     },
     scene: {
@@ -56,10 +61,7 @@ function preload ()
     this.load.image('bomb', 'assets/ghost3.png');
     this.load.spritesheet('dude', 'assets/run.png' ,{ frameWidth: 70, frameHeight: 85 });
 }
-/*function MenuScene(){
-    this.add.image(400,300,'logo');
-    this.add.image(400,300,'buildings');
-}*/
+
 function create ()
 {
     //  background for our game
@@ -85,8 +87,7 @@ function create ()
     //  Player physics properties
     player.setBounce(0.2);
     player.setCollideWorldBounds(true);
-    player.setCircle(40);
-
+    player.setCircle(30,10,20);
     //  Our player animations, turning, walking left and walking right.
     this.anims.create({
         key: 'left',
@@ -147,6 +148,7 @@ function create ()
 
 function update ()
 {
+    var x=200;
     //need to create the gameover screen
     if (gameOver)
     {
@@ -179,6 +181,9 @@ function update ()
     if (cursors.up.isDown && player.body.touching.down)
     {
         player.setVelocityY(-330);
+    }
+    if (score>=x){
+        
     }
 }
 
@@ -217,14 +222,22 @@ function hitBomb (player, bomb)
     player.setTint(0xff0000);
 
     player.anims.play('turn');
-
-    gameOver = true;
     gameOverText.visible=true;
-    cursor.on('click', function (event) {this.scene.restart();}, game);
-}
+    gameOver = true;
 
+    bomb.allowGravity = false;
+    
+}
+document.addEventListener('keyup', function(e){
+  if(e.keyCode == 13)
+    window.location.reload();
+})
 
 </script>
-
+<div>
+    <h1>
+        Press Enter to try again!
+    </h1>
+</div>
 </body>
 </html>
