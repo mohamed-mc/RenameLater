@@ -1,21 +1,15 @@
-/* General styles for all pages */
+
 body {
-    background-color: blue;
-    font-family: sans-serif;
+    background-color: black;
+    font-family: comic-sans;
     color: white;
 }
 
 { -color:; font: sans; color white; : all0.s ease}
-
-/* button style.gl-btn background-color white; : blue border:; text: center display:-block; : px px; : all0.s; -shadow:0px0px10px(255255,,05); .gl-btn { background: blue color:; box: px 20 rgba(,255255,), px px px rgba255,,2551),px px px rgba255,,2551); /* Text */ .split { animation split-text3s; }
 
 keyframes-text { 0%,100%letter-spacing normal;} 50%letter-spacing 1;} }
 
 Loader styles.loader { : px solidfff; -top:16px blue; -radius:50%; : px; : px; : spin2s infinite; @key spin { 0% transform:(0); } 100% transform:(360); } }
 
 
-
-
-/* Styles for buttons, loaders, text effects, etc. */
-/* ... */
 
