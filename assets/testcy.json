@@ -1,0 +1,41 @@
+{
+	"textures": [
+		{
+			"image": "testcy.png",
+			"format": "RGBA8888",
+			"size": {
+				"w": 588,
+				"h": 83
+			},
+			"scale": 1,
+			"frames": [
+				{
+					"filename": "cyborg.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 607,
+						"h": 85
+					},
+					"spriteSourceSize": {
+						"x": 13,
+						"y": 3,
+						"w": 586,
+						"h": 81
+					},
+					"frame": {
+						"x": 1,
+						"y": 1,
+						"w": 586,
+						"h": 81
+					}
+				}
+			]
+		}
+	],
+	"meta": {
+		"app": "https://www.codeandweb.com/texturepacker",
+		"version": "3.0",
+		"smartupdate": "$TexturePacker:SmartUpdate:03729db5c85269571deb55b8c1039b1b:2bd30197e4142e6c1e920a5797695f1b:b0229428ab7a418ac80de1994f95ecda$"
+	}
+}
