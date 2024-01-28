@@ -51,6 +51,12 @@ var game = new Phaser.Game(config);
 
 function preload ()
 {
+    this.input.addDownCallback(function() {
+		if (game.sound.context.state === 'suspended') {
+				game.sound.context.resume();
+		}
+				
+	});
     this.load.image('sky', './assets/background.png');
     this.load.image('buildings','./assets/bg2.png');
     this.load.image('closer_buildings','./assets/bg-3.png');
